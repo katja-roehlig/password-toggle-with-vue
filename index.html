@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Password Toggle</title>
+</head>
+
+<body>
+    <header>
+        <h1>Password Check</h1>
+    </header>
+    <main id="app">
+        <form onsubmit="return false" class="flex" @input="passwordConditions">
+
+            <label for="pw1" class="visually-hidden ">Password </label>
+            <input :type=content id="pw1" class="pass" name="password" v-model="password1">
+            <label for="pw2" class="visually-hidden">Password </label>
+            <input :type=content id="pw2" class="pass" name="password" v-model="password2">
+            <button id="button" @click="content = 'text'" v-if="content ==='password'">Show Password</button>
+            <button id="button" @click="content = 'password'" v-if="content ==='text'">Hide Password</button>
+        </form>
+        <div class="password-condition-text">
+
+            <p> Passwords are equal <span v-if="conditions.equal">✅</span><span v-else>❌</span></p>
+            <p> Lower Case Letters <span v-if="conditions.lowerCase">✅</span><span v-else>❌</span></p>
+            <p> Upper Case Letters <span v-if="conditions.upperCase">✅</span><span v-else>❌</span></p>
+            <p> Contains Numbers <span v-if="conditions.numbers">✅</span><span v-else>❌</span></p>
+            <p> At least 10 characters long <span v-if="conditions.lowerCase">✅</span><span v-else>❌</span></p>
+
+
+        </div>
+
+
+    </main>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
