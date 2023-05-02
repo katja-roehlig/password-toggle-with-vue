@@ -7,14 +7,9 @@ body {
   height: 100vh;
   background: linear-gradient(salmon 82%, rgba(28, 1, 64));
 }
-@media (min-width: 992px) {
-  body {
-    background: linear-gradient(salmon 75%, rgba(28, 1, 64));
-  }
-}
 
 header {
-  padding-block: 1.5em 1em;
+  padding-block: 4.5% 3.5%;
   border-bottom: 2px solid white;
   background: linear-gradient(rgba(28, 1, 64), salmon);
 }
@@ -71,4 +66,12 @@ p {
   text-align: center;
   padding-block: 0.5em 4em;
   border-bottom: 2px solid white;
+}
+@media (min-width: 992px) {
+  body {
+    background: linear-gradient(salmon 75%, rgba(28, 1, 64));
+  }
+  header {
+    padding-block: 7% 4%;
+  }
 }
