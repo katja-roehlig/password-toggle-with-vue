@@ -44,19 +44,4 @@ Vue.createApp({
       }
     },
   },
-  /*computed: {
-    displayedText() {
-      if (this.conditions.equal) {
-        return "Passwords are equal ✅";;
-      } else {
-        return "Passwords are not equal ❌";
-      }
-    },*/
-  /*toggleView() {
-      if (this.content === "password") {
-        this.content = "text";
-      } else {
-        this.content = "password";
-      }
-    },*/
 }).mount("#app");

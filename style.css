@@ -4,12 +4,15 @@
 /* Tag Selectors *********************************************************/
 body {
   margin: 0 0;
-  min-height: 100%;
-  /*background-color: salmon;*/
-  border: 2px solid green;
-  background: linear-gradient(salmon 80%, rgba(28, 1, 64));
-  padding-bottom: 5em;
+  height: 100vh;
+  background: linear-gradient(salmon 82%, rgba(28, 1, 64));
 }
+@media (min-width: 992px) {
+  body {
+    background: linear-gradient(salmon 75%, rgba(28, 1, 64));
+  }
+}
+
 header {
   padding-block: 1.5em 1em;
   border-bottom: 2px solid white;
@@ -38,7 +41,6 @@ p {
   margin: 2.5em auto 2em auto;
   gap: 1em;
   height: 100%;
-  /*max-width: 80vmin;*/
   border-bottom: 2px solid white;
   padding-bottom: 1.5em;
 }
@@ -67,6 +69,6 @@ p {
 }
 .password-condition-text {
   text-align: center;
-  padding-bottom: 2em;
+  padding-block: 0.5em 4em;
   border-bottom: 2px solid white;
 }
